@@ -1,0 +1,214 @@
+/* Base styles for larger screens (1200px and up) */
+.product-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 140px;
+}
+
+/* Image gallery styles */
+.image-gallery {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Adjusted margin for some space */
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.zoomable-image {
+    width: 400px;
+    height: 420px;
+    margin-left: 20px; /* Margin to separate image from container's edge */
+    transition: transform 0.3s ease;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.prev, .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Product details styles */
+.product-details {
+    flex: 2;
+    padding-left: 20px; /* Added padding for separation */
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 20px;
+    color: rgb(22, 21, 21);
+    margin-bottom: 20px;
+}
+
+.add-to-cart-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity-control {
+    background-color: #131313;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity {
+    padding: 0 10px;
+}
+
+.add-to-cart {
+    background-color: rgb(11, 11, 10);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.tabs-container {
+    margin-top: 20px;
+}
+
+.tab-button {
+    background-color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 30px;
+}
+
+.tab-button.active {
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller screens (up to 768px) */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px; /* Adjust top margin for smaller screens */
+        padding: 10px;
+    }
+
+    .image-gallery {
+        margin-right: 0;
+        margin-bottom: 20px; /* Space between image and details */
+    }
+    .add-to-cart-container{
+        justify-content: center;
+    }
+
+    .zoomable-image {
+        width: 80%; /* Image scales to fit the screen */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .product-details {
+        padding-left: 0;
+        text-align: center; /* Center text for smaller screens */
+    }
+}
+
+/* For mobile phones (up to 480px) */
+@media (max-width: 480px) {
+    .product-container {
+        margin-top: 80px; /* Further reduce top margin */
+    }
+
+    .thumbnail {
+        width: 50px; /* Smaller thumbnails */
+        height: 50px;
+    }
+
+    .zoomable-image {
+        width: 100%; /* Use full width */
+        margin-left: 0;
+    }
+
+    .product-details h1 {
+        font-size: 20px; /* Smaller heading */
+    }
+
+    .price {
+        font-size: 18px; /* Smaller price font */
+    }
+.add-to-cart-container{
+    justify-content: center;
+}
+    .add-to-cart {
+        font-size: 14px; /* Smaller button font */
+        padding: 8px 16px;
+    }
+}
+
+/* For very large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .product-container {
+        max-width: 1400px; /* Wider container for large screens */
+        padding: 30px;
+    }
+
+    .zoomable-image {
+        width: 500px; /* Larger image */
+        height: 520px;
+    }
+
+    .product-details h1 {
+        font-size: 28px; /* Larger heading */
+    }
+    /* .add-to-cart-container{
+        justify-content: center;
+    } */
+
+    .price {
+        font-size: 22px; /* Larger price font */
+    }
+
+    .add-to-cart {
+        font-size: 18px; /* Larger button font */
+        padding: 12px 24px;
+    }
+}

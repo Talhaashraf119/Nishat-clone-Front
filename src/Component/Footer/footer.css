@@ -1,0 +1,27 @@
+.footer {
+    background-color: #f9f9f9;
+}
+
+.footer h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.list-unstyled{
+    list-style: none;
+}
+
+.footer p, 
+.footer a {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.social-icons i:hover {
+    color: #231616;
+}

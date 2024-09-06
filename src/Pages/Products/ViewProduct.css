@@ -1,0 +1,155 @@
+/* Styling for the search bar */
+.search-bar {
+    width: 100%; /* Full width for the search bar */
+    max-width: 800px; /* Maximum width for readability */
+    margin: 20px auto; /* Center align the search bar */
+    padding: 10px; /* Padding inside the input */
+    font-size: 1em; /* Font size */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    display: block; /* Block display to control width */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Container for the entire product listing */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Center align the cards */
+    gap: 10px; /* Space between cards */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Individual product card */
+.product-card {
+    background-color: #fff; /* White background for the card */
+    border: 1px solid #ddd; /* Light border for definition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    width: 100%;
+    max-width: 340px; /* Maximum width for each card */
+    flex: 1 1 calc(33.33% - 40px); /* Responsive width for 3 cards per row with space */
+    margin: 10px; /* Margin for spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    overflow: hidden; /* Ensures content does not overflow */
+    padding: 20px; /* Padding inside each card */
+    text-align: center; /* Center align the text inside each card */
+}
+
+/* Hover effect for the product card */
+.product-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Product image styling */
+.product-card img {
+    width: 100%; /* Full width of the card */
+    height: 400px; /* Maintain aspect ratio */
+    max-height: 370px; /* Cap the height to maintain consistent card sizes */
+    border-bottom: 1px solid #ddd; /* Bottom border to separate image from text */
+    margin-bottom: 15px; /* Space between image and content */
+}
+
+/* Product name styling */
+.product-name {
+    font-size: 1.2em; /* Slightly larger font size */
+    color: #333; /* Dark color for text */
+    margin-bottom: 10px; /* Space below the product name */
+    font-weight: bold;
+}
+
+/* Container for the category buttons */
+.Category-button {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Space between buttons */
+    margin-top: 10px; /* Margin to space the container from other elements */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+/* Styling for individual buttons */
+.Category-button button {
+    background-color: #afaf4c; /* Professional green background color */
+    color: white; /* White text for contrast */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size and clickable area */
+    font-size: 1em; /* Consistent font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hover effect for buttons */
+.Category-button button:hover {
+    background-color: #7a8031; /* Darker green for hover effect */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Active/Focus effect for buttons */
+.Category-button button:active {
+    transform: translateY(0); /* Remove lift on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Restore original shadow on click */
+    background-color: #3e8e41; /* Even darker green when clicked */
+}
+
+/* Product description styling */
+.product-description {
+    font-size: 0.9em; /* Smaller font size for description */
+    color: #666; /* Gray color for description */
+    margin-bottom: 15px;
+}
+
+
+/* Product price styling */
+.product-price {
+    font-size: 1.1em; /* Medium font size for price */
+    color: #1a7f24; /* Green color for price */
+    margin-bottom: 10px; /* Space below the price */
+    font-weight: bold;
+    margin-left: 50px; /* Bold text for product price */
+}
+
+/* Product stock styling */
+.product-stock {
+    font-size: 0.9em; /* Smaller font size for stock */
+    color: #999; /* Gray color for stock */
+    margin-bottom: 10px; /* Space below the stock */
+}
+
+/* Product category styling */
+.product-category {
+    font-size: 0.9em; /* Smaller font size for category */
+    color: #555; /* Gray color for category */
+    margin-bottom: 10px; /* Space below the category */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .product-card {
+        flex: 1 1 calc(50% - 40px); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        flex: 1 1 calc(50% - 20px); /* Adjusted width for smaller screens */
+    }
+    .product-container {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card {
+        flex: 1 1 100%; /* 1 card per row on small screens */
+        max-width: 100%; /* Ensure cards take full width */
+    }
+    .Category-button {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Reduced gap for smaller screens */
+    }
+}

@@ -1,0 +1,138 @@
+/* Base styles for larger screens (1200px and up) */
+.update-product-container {
+    max-width: 800px; /* Increased width for larger screens */
+    margin: 50px auto; /* Center the form */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-product-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .update-product-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .update-product-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .update-product-form input[type="text"],
+  .update-product-form input[type="number"],
+  .update-product-form textarea,
+  .update-product-form select,
+  .update-product-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px; /* Slightly larger font size for readability */
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .update-product-form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .update-product-form input[type="file"] {
+    padding: 5px;
+  }
+  
+  .update-product-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    background: #757f2d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Larger button font size */
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .update-product-btn:hover {
+    background: #c6da2e;
+  }
+  
+  /* Media query for tablets and smaller screens (up to 768px) */
+  @media (max-width: 768px) {
+    .update-product-container {
+      max-width: 90%; /* Use most of the screen width */
+      padding: 15px; /* Reduce padding for smaller screens */
+    }
+  
+    .update-product-form input[type="text"],
+    .update-product-form input[type="number"],
+    .update-product-form textarea,
+    .update-product-form select,
+    .update-product-form input[type="file"] {
+      font-size: 14px; /* Adjusted font size for readability */
+      padding: 8px; /* Adjusted padding for better fit */
+    }
+  
+    .update-product-btn {
+      font-size: 16px; /* Slightly smaller button font size */
+      padding: 10px; /* Adjusted padding */
+    }
+  }
+  
+  /* Media query for mobile phones (up to 480px) */
+  @media (max-width: 480px) {
+    .update-product-container {
+      width: 95%; /* Almost full screen width */
+      margin: 20px auto; /* Adjusted margin for mobile */
+      padding: 10px; /* Further reduced padding */
+    }
+  
+    .update-product-form label {
+      font-size: 14px; /* Smaller label font size */
+    }
+  
+    .update-product-form input[type="text"],
+    .update-product-form input[type="number"],
+    .update-product-form textarea,
+    .update-product-form select,
+    .update-product-form input[type="file"] {
+      font-size: 12px; /* Smaller font size for inputs */
+      padding: 6px; /* Smaller padding for inputs */
+    }
+  
+    .update-product-btn {
+      font-size: 14px; /* Smaller button font size */
+      padding: 8px; /* Smaller padding for the button */
+    }
+  }
+  
+  /* Media query for very large screens (1200px and up) */
+  @media (min-width: 1200px) {
+    .update-product-container {
+      max-width: 1000px; /* Increased width for very large screens */
+      padding: 30px; /* More padding for a spacious look */
+    }
+  
+    .update-product-form input[type="text"],
+    .update-product-form input[type="number"],
+    .update-product-form textarea,
+    .update-product-form select,
+    .update-product-form input[type="file"] {
+      font-size: 18px; /* Larger font size for easier reading */
+      padding: 12px; /* More padding for input elements */
+    }
+  
+    .update-product-btn {
+      font-size: 20px; /* Larger button font size */
+      padding: 12px 24px; /* More padding for buttons */
+    }
+  }
+  
